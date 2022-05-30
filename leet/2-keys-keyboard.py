@@ -1,7 +1,8 @@
+#https://leetcode.com/problems/2-keys-keyboard/description/
+
 factors = []
 
 def prime(n):
-
     if n == 2 or n == 3:
         return n
     elif n > 3: 
@@ -12,14 +13,11 @@ def prime(n):
             return n
 
 def leet(i):
-
     if prime(i):
         factors.append(i)
-
     else:
         current = 2
         while i > 1:
-
             if (i % current == 0):
                factors.append(current)
                i = i / current
